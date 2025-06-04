@@ -1,0 +1,172 @@
+.btn {
+    width: 140px;
+    height: 50px;
+    /* background: linear-gradient(to top, #00154c, #12376e, #23487f); */
+    background: linear-gradient(to right, #1E90FF, #00BFFF);
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.btn span {
+    font-size: 13.5px;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+}
+
+.btn-text-one {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.btn-text-two {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+    top: -100%;
+}
+
+.btn:hover .btn-text-two {
+    top: 50%;
+}
+
+
+
+
+
+.neon-square {
+    position: absolute;
+    border-radius: 10px;
+    opacity: 0.8;
+    /* box-shadow: 0 0 15px rgba(9, 208, 243, 0.699),
+                0 0 30px rgba(0, 60, 255, 0.3),
+                0 0 45px rgb(1, 217, 255); */
+    /* box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, inset 0 0 10px #0ff;
+    border: 1px solid #0ff; */
+    transition: top 1.2s ease, left 1.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.learnmorebutton span{
+    font-weight: bolder;
+    padding-left: 5px;
+    transition: all 0.2s ease;
+}
+.learnmorebutton:hover span{
+    padding-left: 10px;
+}
+
+/* .filter-blue {
+    mix-blend-mode: screen;
+    background-color: aqua;
+  } */
+
+  .card:hover a svg{
+    fill: white;
+  }
+
+
+/* Technologies page  */
+
+.techcard:hover img{
+    filter: grayscale(0%);
+}
+
+
+
+/* Faqs Section  */
+
+  .faqIcon{
+    animation: faqiconaniamte 0.3s ease ;
+  }
+
+
+  @keyframes faqiconaniamte {
+    0% {
+      opacity: 0;
+      transform: rotate(360deg);
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+
+
+  /* Responsiveness Desings  */
+
+  @media (width <= 65rem) { 
+        .Projectcontent h1{
+            font-size: 3vw;
+        }
+        .Projectcontent p{
+            font-size: 1.3vw;
+            line-height: 1rem;
+        }
+
+        
+      }
+      /* @media (width < 80rem) { 
+        .aboutsection h3{
+          font-size: 65%;
+        }
+        .aboutsection p{
+            font-size: 60%;
+       }
+  } */
+/* 
+  @media (width < 80rem) { 
+       .aboutsection h3{
+            font-size: 65%;
+          }
+          .aboutsection p{
+            font-size: 60%;
+       }
+  } */
+  @media (width < 895px) { 
+      .left h1{
+        font-size: 1.75rem;
+      }
+  }
+
+  @media (width < 360px) { 
+    .left h1, .second h1{
+      font-size: 1.50rem;
+      }
+
+      .about h3{
+        font-size: 1.05rem;
+      }
+  }
+  @media (width < 450px) { 
+      .techcard{
+        padding: .55rem .6rem;
+        font-size: 0.70rem /* 12px */;
+      }
+  }
+  /* @media (width < 640px) { 
+      .left{
+        text-align: center;
+      }
+      .left > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  } */
+

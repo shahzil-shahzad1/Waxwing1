@@ -1,0 +1,115 @@
+ /* Project page Header */
+
+/* 
+  .projectpagecard {
+    width: 350px;
+    height: 304px;
+    border-radius: 4px;
+    display: flex;
+    gap: 5px;
+    padding: .4em;
+  }
+
+  .projectpagecard a {
+    height: 100%;
+    padding: 0 10px;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    border: 1px solid rgba(0, 255, 255, 0.945);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projectpagecard a:hover {
+    flex: 4;
+  }
+
+  .projectpagecard a span {
+    min-width: fit-content;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: rgb(0, 255, 255);
+    letter-spacing: .1em;
+    font-weight: bolder;
+  }
+
+  .projectpagecard a:hover span {
+    transform: rotate(0);
+  } */
+
+.servicecard {
+   background-color: transparent;
+  padding: 20px 15px;
+  border: .5px solid #003844;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  }
+
+.cardclienthover{
+    box-shadow: 0 6px 10px #003844;
+  transform: translateY(-10px);
+}
+
+
+
+
+.SectioniHolder{
+  position: relative;
+  height: fit-content;
+  overflow: hidden;
+}
+
+
+.morphing-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.morphing-bubble {
+  position: absolute;
+  background: inherit;
+  border-radius: 50%;
+  mix-blend-mode: lighten;
+  backdrop-filter: blur(20px);
+  animation: morphShape 15s ease-in-out infinite alternate, floatMove 30s linear infinite;
+  transition: all 5s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes morphShape {
+  0% {
+    border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+  }
+  50% {
+    border-radius: 40% 70% 60% 30% / 60% 40% 70% 50%;
+  }
+  100% {
+    border-radius: 70% 30% 50% 50% / 50% 70% 30% 60%;
+  }
+}
+
+@keyframes floatMove {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+  }
+}
+
+
+
